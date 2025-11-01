@@ -17097,11 +17097,20 @@ ul.footer-social li a img {
 	}
 
 	.banner-style-eight-heading h2:first-child {
-		color: var(--color-secondary);
+		color: #282727;
+    text-shadow:0 0 20px rgba(255, 13, 0, 0.3),
+                 0 0 40px rgba(255, 0, 0, 0.2);
 	}
 
 	.bg-dark .banner-style-eight-heading h2:first-child {
-		color: var(--color-primary);
+		 font-family: 'Orbitron', sans-serif;
+    font-size: 60px;
+    color: #fff;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    text-shadow: 0 0 20px rgba(0, 255, 255, 0.3),
+                 0 0 40px rgba(0, 255, 255, 0.2);
+    margin: 0;
 	}
 
 	/* Banner Style Nine */
