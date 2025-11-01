@@ -157,13 +157,61 @@
                                             <div class="content"
                                                 style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; padding: 12px 0;">
                                                 <p style="margin: 0; font-size: 14px; color: #555; font-weight: 500;">
-                                                    Email
-                                                </p>
-                                               <a href="https://mail.google.com/mail/?view=cm&fs=1&to=projects@aetherlabs.studio&su=Project%20Inquiry&body=Hello%20Aether%20Labs,%0D%0A%0D%0AI’d%20like%20to%20discuss..."
-   target="_blank"
+                                            <a href="mailto:projects@aetherlabs.studio?subject=Project%20Inquiry&body=Hello%20Aether%20Labs,%0D%0A%0D%0AI’d%20like%20to%20discuss..."
+   onclick="openEmail(event)"
    style="color: #10b981; text-decoration: none; font-weight: 600; font-size: 20px; transition: color 0.2s;">
    <strong>projects@aetherlabs.studio</strong>
 </a>
+
+<script>
+  function openEmail(event) {
+    // Detect mobile
+    const isMobile = /Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
+
+    if (isMobile) {
+      // Prevent default mailto
+      event.preventDefault();
+
+      // Try to open Gmail app
+      const gmailUrl = 'googlegmail:///co?to=projects@aetherlabs.studio&subject=Project%20Inquiry&body=Hello%20Aether%20Labs,%0D%0A%0D%0AI’d%20like%20to%20discuss...';
+      const mailtoUrl = 'mailto:projects@aetherlabs.studio?subject=Project%20Inquiry&body=Hello%20Aether%20Labs,%0D%0A%0D%0AI’d%20like%20to%20discuss...';
+
+      // Try Gmail app, fallback to mailto
+      window.location.href = gmailUrl;
+
+      // If Gmail app isn't installed, fallback after short delay
+      setTimeout(() => {
+        window.location.href = mailtoUrl;
+      }, 800);
+    }
+  }
+</script>
+
+
+<script>
+  function openEmail(event) {
+    // Detect mobile
+    const isMobile = /Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
+
+    if (isMobile) {
+      // Prevent default mailto
+      event.preventDefault();
+
+      // Try to open Gmail app
+      const gmailUrl = 'googlegmail:///co?to=projects@aetherlabs.studio&subject=Project%20Inquiry&body=Hello%20Aether%20Labs,%0D%0A%0D%0AI’d%20like%20to%20discuss...';
+      const mailtoUrl = 'mailto:projects@aetherlabs.studio?subject=Project%20Inquiry&body=Hello%20Aether%20Labs,%0D%0A%0D%0AI’d%20like%20to%20discuss...';
+
+      // Try Gmail app, fallback to mailto
+      window.location.href = gmailUrl;
+
+      // If Gmail app isn't installed, fallback after short delay
+      setTimeout(() => {
+        window.location.href = mailtoUrl;
+      }, 800);
+    }
+  }
+</script>
+
 
                                             </div>
                                         </li>
