@@ -349,13 +349,15 @@
 
                 $('.navbar-collapse').addClass('collapse-mobile');
 
-                $("nav.navbar.validnavs.menu-onepage li a").each(function() {
-                    $(this).on("click", function() {
-                        $('.navbar-collapse').addClass("hide_menu");
-                    });
+                // Close menu on link click
+                $("nav.navbar.validnavs .navbar-nav a").on("click", function(event) {
+                    var $navbarCollapse = $('.navbar-collapse');
+                    if ($navbarCollapse.hasClass('show')) {
+                        $navbarCollapse.removeClass('show');
+                        $('.overlay-screen').removeClass("opened");
+                        $('.navbar').removeClass("navbar-responsive");
+                    }
                 });
-
-
             } else if (getWindow > 1023) {
                 // Height of scroll navigation sidebar
                 $(".scroller").css("height", getHeight + "px");
