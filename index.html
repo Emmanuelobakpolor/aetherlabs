@@ -621,73 +621,68 @@
         </div>
         <!-- End Recent Works -->
        
-    
-       <!-- 🌌 Start Full-Screen Services Slider (Dark Theme, Inline CSS + JS) -->
-<div id="aetherSlider" style="position:relative; width:100%; height:100vh; overflow:hidden; background:#0a0a0a; font-family:'Poppins',sans-serif; color:#fff;">
+<!-- 🌌 Start Full-Screen Services Slider (Clean Version) -->
+<div id="aetherSlider" class="slider-container">
 
-  <!-- Slides -->
-  <div class="slide active" style="position:absolute; width:100%; height:100%; display:flex; align-items:center; justify-content:center; flex-direction:row; opacity:1; transition:opacity 1s ease;">
-    <div style="flex:1; padding:60px;">
-      <h1 style="font-size:64px; margin-bottom:20px; color:#fff;">Rapid Prototyping</h1>
-      <p style="color:#ccc; font-size:18px; line-height:1.6;">From conceptual models to functional prototypes, we bring designs to life rapidly to evaluate form, fit, and function.</p>
+  <!-- Slide 1 -->
+  <div class="slide active">
+    <div class="slide-text">
+      <h1>Rapid Prototyping</h1>
+      <p>From conceptual models to functional prototypes, we bring designs to life rapidly to evaluate form, fit, and function.</p>
     </div>
-    <div style="flex:1; display:flex; justify-content:center; align-items:center;">
-      <img src="images/A_webpage_design_for_Aether_Labs_focuses_on_Rapid_.png" alt="Rapid Prototyping" style="width:80%; border-radius:20px; box-shadow:0 0 40px rgba(255,255,255,0.1);">
+    <div class="slide-image">
+      <img src="images/A_webpage_design_for_Aether_Labs_focuses_on_Rapid_.png" alt="Rapid Prototyping">
     </div>
   </div>
 
-  <div class="slide" style="position:absolute; width:100%; height:100%; display:flex; align-items:center; justify-content:center; flex-direction:row; opacity:0; transition:opacity 1s ease;">
-    <div style="flex:1; display:flex; justify-content:center; align-items:center;">
-      <img src="images/A_webpage_screenshot_for_Aether_Labs_focuses_on_Hu.png" alt="UI/UX Design" style="width:80%; border-radius:20px; box-shadow:0 0 40px rgba(255,255,255,0.1);">
+  <!-- Slide 2 -->
+  <div class="slide">
+    <div class="slide-image">
+      <img src="images/A_webpage_screenshot_for_Aether_Labs_focuses_on_Hu.png" alt="UI/UX Design">
     </div>
-    <div style="flex:1; padding:60px;">
-      <h1 style="font-size:64px; margin-bottom:20px; color:#fff;">Human Centered Research</h1>
-      <p style="color:#ccc; font-size:18px; line-height:1.6;">We uncover user insights through
-interviews, observations, and testing,
-ensuring our solutions are grounded
-in real needs.</p>
+    <div class="slide-text">
+      <h1>Human Centered Research</h1>
+      <p>We uncover user insights through interviews, observations, and testing, ensuring our solutions are grounded in real needs.</p>
     </div>
   </div>
 
-  <div class="slide" style="position:absolute; width:100%; height:100%; display:flex; align-items:center; justify-content:center; flex-direction:row; opacity:0; transition:opacity 1s ease;">
-    <div style="flex:1; padding:60px;">
-      <h1 style="font-size:64px; margin-bottom:20px; color:#fff;">Product Design</h1>
-      <p style="color:#ccc; font-size:18px; line-height:1.6;">We develop comprehensive product designs that emphasize
-form, functionality, and user experience. Our team iterates on
-ideas and refines details to create solutions that are both
-aesthetically pleasing and highly practical.</p>
+  <!-- Slide 3 -->
+  <div class="slide">
+    <div class="slide-text">
+      <h1>Product Design</h1>
+      <p>We develop comprehensive product designs that emphasize form, functionality, and user experience. Our team iterates on ideas and refines details to create solutions that are both aesthetically pleasing and highly practical.</p>
     </div>
-    <div style="flex:1; display:flex; justify-content:center; align-items:center;">
-      <img src="images/A_webpage_design_for_Aether,_a_company_specializin.png" alt="Web Development" style="width:80%; border-radius:20px; box-shadow:0 0 40px rgba(255,255,255,0.1);">
+    <div class="slide-image">
+      <img src="images/A_webpage_design_for_Aether,_a_company_specializin.png" alt="Product Design">
     </div>
   </div>
 
-  <div class="slide" style="position:absolute; width:100%; height:100%; display:flex; align-items:center; justify-content:center; flex-direction:row; opacity:0; transition:opacity 1s ease;">
-    <div style="flex:1; display:flex; justify-content:center; align-items:center;">
-      <img src="images/A_digital_screenshot_displays_a_webpage_from_Aethe.png" alt="Digital Branding" style="width:80%; border-radius:20px; box-shadow:0 0 40px rgba(255,255,255,0.1);">
+  <!-- Slide 4 -->
+  <div class="slide">
+    <div class="slide-image">
+      <img src="images/A_digital_screenshot_displays_a_webpage_from_Aethe.png" alt="Digital Branding">
     </div>
-    <div style="flex:1; padding:60px;">
-      <h1 style="font-size:64px; margin-bottom:20px; color:#fff;">Surface Texturing</h1>
-      <p style="color:#ccc; font-size:18px; line-height:1.6;">Each texture serves to elevate both a product's functionality ad its visual
-aesthetics. We specialize in creating textures that complement the
-form and function of products, delivering results that are both practio
-and aesthetically appealing.</p>
+    <div class="slide-text">
+      <h1>Surface Texturing</h1>
+      <p>Each texture serves to elevate both a product's functionality and its visual aesthetics. We specialize in creating textures that complement the form and function of products, delivering results that are both practical and aesthetically appealing.</p>
     </div>
   </div>
 
   <!-- Navigation Arrows -->
-  <button id="prevBtn" style="position:absolute; top:50%; left:40px; transform:translateY(-50%); background:rgba(255,255,255,0.1); border:none; color:#fff; font-size:28px; padding:12px 18px; border-radius:50%; cursor:pointer;">&#10094;</button>
-  <button id="nextBtn" style="position:absolute; top:50%; right:40px; transform:translateY(-50%); background:rgba(255,255,255,0.1); border:none; color:#fff; font-size:28px; padding:12px 18px; border-radius:50%; cursor:pointer;">&#10095;</button>
+  <button id="prevBtn" class="nav-btn">&#10094;</button>
+  <button id="nextBtn" class="nav-btn">&#10095;</button>
 
   <!-- Dot Navigation -->
-  <div id="dots" style="position:absolute; bottom:30px; left:50%; transform:translateX(-50%); display:flex; gap:10px;">
-    <span class="dot active" style="width:14px; height:14px; border-radius:50%; background:#fff; cursor:pointer; transition:0.3s;"></span>
-    <span class="dot" style="width:14px; height:14px; border-radius:50%; background:#555; cursor:pointer; transition:0.3s;"></span>
-    <span class="dot" style="width:14px; height:14px; border-radius:50%; background:#555; cursor:pointer; transition:0.3s;"></span>
-    <span class="dot" style="width:14px; height:14px; border-radius:50%; background:#555; cursor:pointer; transition:0.3s;"></span>
+  <div id="dots" class="dots">
+    <span class="dot active"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
   </div>
 
 </div>
+<!-- 🌌 End Full-Screen Services Slider -->
+
 
 <!-- Inline JS for Slider -->
 <script>
