@@ -1,0 +1,31 @@
+{
+  "color": {
+    "bg": "#0B0B0C",
+    "surface": "#121214",
+    "text": "#FFFFFF",
+    "muted": "#C9C9D1",
+    "accent": "#E53935",
+    "line": "#2A2A2E"
+  },
+  "typography": {
+    "font_family": "Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif",
+    "h1_size": "clamp(2rem, 4vw, 3.5rem)",
+    "h2_size": "clamp(1.5rem, 3vw, 2.25rem)",
+    "body_size": "clamp(1rem, 1.2vw, 1.125rem)",
+    "line_height": 1.6
+  },
+  "spacing": {
+    "s": "12px",
+    "m": "24px",
+    "l": "40px",
+    "xl": "72px"
+  },
+  "radius": {
+    "sm": "8px",
+    "md": "14px",
+    "lg": "22px"
+  },
+  "shadow": {
+    "soft": "0 10px 40px rgba(0,0,0,0.35)"
+  }
+}
